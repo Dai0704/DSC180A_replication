@@ -7,9 +7,7 @@ FROM rocker/r-base:latest
 
 USER root
 
-
-COPY ./run.R run.R
-
+COPY ./ ./
 RUN Rscript ./run.R test
 USER $NB_UID
 

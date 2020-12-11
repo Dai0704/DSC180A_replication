@@ -1,6 +1,5 @@
 {
-    "dataset": "./data/MoothaData.txt",
-    "csv_filename": "stats_summary.csv",
+    "data_fp": "./data/MoothaData.txt",
     "g1": "1:17",
     "g2": "18:34"  
 }
