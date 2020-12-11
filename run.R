@@ -4,15 +4,8 @@
 install.packages("rjson",repos = "http://cran.us.r-project.org")
 #run this above line if rjson has not yet been installed
 
-#install.packages("psych",repos = "http://cran.us.r-project.org")
-#install.packages("tidyr",repos = "http://cran.us.r-project.org")
-#install.packages("devtools",repos = "http://cran.us.r-project.org")
-
 target = as.character(commandArgs(trailingOnly=TRUE))
 library("rjson")
-#library(psych)
-#library(tidyr)
-#library(dplyr)
 
 # build path to the R script where all the functions are stored
 path = './src/methods.R'
@@ -57,11 +50,15 @@ if ('eda' %in% target) {
 	print('invalid input. Command Line options -- all/test (default test)')
 }
 
+#future functions (aka pipeline)
 #FDR_function()
 #simulate_function()
 #fit_function()
+
+
 #source('./src/functions.R')
 #mootha <- read.table('./src/data/MoothaData.txt')
 #Z = scan('./src/data/JonghoZscores.txt')
+
 #mootha_function(mootha)
 #Jongho_function(Z)
