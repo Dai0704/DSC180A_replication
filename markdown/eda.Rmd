@@ -98,7 +98,6 @@ write.csv(group_stat, '../test/test_output/group_stat.csv')
 ```
 
 
-
 #######2
 path_2 = './src/eda.R'
 # source that path
@@ -130,13 +129,13 @@ if ('eda' %in% target) {
   
   path = data_fp['data_fp']
   g1 = data_fp['g1']
-  g2 = data_fp['g1']
-  mootha  = read.table(as.character(path), header = TRUE)
-  eda_generator(mootha,g1,g2)
+  g2 = data_fp['g2']
+  mootha  = read.table(as.character(path),header = TRUE)
+  
+  scatter_matrix_function(mootha,g1,g2)
+  stat_summary(mootha,g1,g2)
 } else {
   print('invalid input. Command Line options -- all/test (default test)')
 }
-
-
 
 
