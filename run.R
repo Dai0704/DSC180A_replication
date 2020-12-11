@@ -4,9 +4,9 @@
 install.packages("rjson",repos = "http://cran.us.r-project.org")
 #run this above line if rjson has not yet been installed
 
-install.packages("psych",repos = "http://cran.us.r-project.org")
-install.packages("tidyr",repos = "http://cran.us.r-project.org")
-install.packages("devtools",repos = "http://cran.us.r-project.org")
+#install.packages("psych",repos = "http://cran.us.r-project.org")
+#install.packages("tidyr",repos = "http://cran.us.r-project.org")
+#install.packages("devtools",repos = "http://cran.us.r-project.org")
 
 target = as.character(commandArgs(trailingOnly=TRUE))
 library("rjson")
@@ -86,10 +86,10 @@ if ('eda' %in% target) {
   # build path and load data for the first method
   data_fp = fromJSON(file = "./config/test.json")
   
-  path = data_fp['dataset']
+  path = data_fp['data_fp']
   g1 = data_fp['g1']
   g2 = data_fp['g2']
-  mootha  = read.table(as.character(path))
+  mootha  = read.table(as.character(path),header = TRUE)
   
   scatter_matrix_function(mootha,g1,g2)
   stat_summary(mootha,g1,g2)
