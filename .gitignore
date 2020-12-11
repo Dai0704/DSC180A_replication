@@ -1,0 +1,10 @@
+
+.DS_Store
+config/.DS_Store
+data/.DS_Store
+markdown/.DS_Store
+references/.DS_Store
+src/.DS_Store
+test/.DS_Store
+test/test_output/.DS_Store
+test/testdata/.DS_Store
