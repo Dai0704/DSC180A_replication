@@ -8,7 +8,7 @@ target = as.character(commandArgs(trailingOnly=TRUE))
 library("rjson")
 
 # build path to the R script where all the functions are stored
-path = './src/methods.R'
+path = '../src/methods.R'
 # source that path
 source(path)
 
