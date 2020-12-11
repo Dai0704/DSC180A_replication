@@ -4,9 +4,9 @@
 install.packages("rjson",repos = "http://cran.us.r-project.org")
 #run this above line if rjson has not yet been installed
 
-#install.packages("psych",repos = "http://cran.us.r-project.org")
-#install.packages("tidyr",repos = "http://cran.us.r-project.org")
-#install.packages("devtools",repos = "http://cran.us.r-project.org")
+install.packages("psych",repos = "http://cran.us.r-project.org")
+install.packages("tidyr",repos = "http://cran.us.r-project.org")
+install.packages("devtools",repos = "http://cran.us.r-project.org")
 
 target = as.character(commandArgs(trailingOnly=TRUE))
 library("rjson")
